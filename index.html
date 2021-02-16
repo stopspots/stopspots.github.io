@@ -16,7 +16,8 @@
 				position: absolute;
 				top: 0;
 				bottom: 0;
-				width: 100%;
+				width: 50%;
+				height: 100%;
 			}
 
 			body {
@@ -28,9 +29,17 @@
 <body>
 <div id="map"></div>
 <script>
-			var map = L.map("map").setView([40.7259, -73.9806], 5);
+			var map = L.map("map").setView([47.0634, -79.7896], 5);
 			var tileUrl = "http://{s}.tile.osm.org/{z}/{x}/{y}.png";
 			L.tileLayer(tileUrl).addTo(map);
 		</script>
+
+<!--right now the map opens up kinda in the middle of canada. we should add an input box where if you type your
+location, you can go the that location's general vicinity so you're not looking at all of canada's cases.-->
+    <link rel="stylesheet" href="https://leafletjs.com/examples/quick-start/"/>
+    <link rel="stylesheet" href="https://gist.github.com/sevko/cbba4c430b715c1aba66"/>
+
+
+
 </body>
 </html>
